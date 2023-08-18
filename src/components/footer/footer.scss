@@ -1,0 +1,56 @@
+@mixin center {
+	margin-left: auto;
+	margin-right: auto;
+}
+.footer {
+    border-top: 1px solid #ccc;
+	padding-top: 50px;
+    margin-top: 50px;
+	.__flex {
+		width: 80%;
+		@include center;
+		@media (max-width: 942px) {
+			flex-wrap: wrap;
+			gap: 40px;
+			justify-content: unset;
+		}
+	}
+	.__1 {
+		.foot_logo {
+			width: 122px;
+			height: 32px;
+		}
+		p {
+			color: var(--new-styles-text-body-dark, #515251);
+			/* Body/Small/1/Regular */
+			font-family: Aeonik;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 20px; /* 142.857% */
+			letter-spacing: 0.25px;
+		}
+	}
+	.___ {
+		h1 {
+			color: var(--new-styles-text-heading, #292a29);
+			/* Caption/Sub Header/H4/Medium */
+			font-family: Aeonik;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 24px; /* 120% */
+			letter-spacing: 0.2px;
+		}
+		a,
+		p {
+			color: #7c7c7c;
+			/* Body/Normal/Regular */
+			font-family: Aeonik TRIAL;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 24px;
+		}
+	}
+}
