@@ -48,13 +48,13 @@
 	}
 	.abs {
 		padding: 40px 30px;
-		position: absolute;
+		position: fixed;
 		top: 80px;
 		bottom: 0;
 		right: 0;
 		left: 0;
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
+		border-top-left-radius: 50px;
+		border-top-right-radius: 50px;
 		z-index: 100000000000;
 		// background-image: url("../../assets/gra.png");
 		background-color: #fff;
